@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,6 +8,18 @@ body {
     min-height: 100vh;
 }
 
+#fondopapel {
+        background-color: #fff;
+        background-image:
+        
+            linear-gradient(90deg, transparent 2px, #abced4 2px, #abced4 3px, transparent 3px),
+            linear-gradient(#eee .1em, transparent .1em),
+            linear-gradient(0deg, transparent 2px, #abced4 2px, #abced4 3px, transparent 3px);
+        background-size: 30px 30px; /* Tamaño de los cuadros (puedes ajustar según tus preferencias) */
+}
+    
+
+/* Estilos del encabezado */
 header {
     background-color: #333;
     color: #fff;
@@ -16,34 +29,19 @@ header {
     align-items: center;
 }
 
+/* Estilos del logotipo */
 .logo img {
     width: 100px;
 }
 
+/* Estilos del ícono de Instagram */
 .logoig img {
-
     width: 20px;
     margin-bottom: -5px;
-    object-fit: cover; /* Ajusta el tamaño y recorte de la imagen */
-   /* transition: opacity 0.3s;  Transición de opacidad para suavizar el efecto */
+    object-fit: cover;
 }
 
-/*
-.image-hover {
-    opacity: 1;  Oculta la segunda imagen por defecto 
-}
-
-.logoig:hover .image {
-    opacity: 0;  Oculta la primera imagen al pasar el ratón por encima 
-    transition: opacity 0.3s;
-}
-
-.logoig:hover .image-hover {
-    opacity: 1;  Muestra la segunda imagen al pasar el ratón por encima del contenedor 
-    transition: opacity 0.3s;
-}
-*/
-
+/* Estilos de la navegación */
 nav ul {
     list-style: none;
     padding: 0;
@@ -69,13 +67,15 @@ a:hover {
     text-decoration: none;
 }
 
+/* Estilos del contenido principal */
 .main-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex: 1; /* Añadido para que ocupe todo el espacio disponible */
+    flex: 1;
 }
 
+/* Estilos de la barra lateral (aside) */
 aside {
     width: 20%;
     padding: 20px;
@@ -83,6 +83,7 @@ aside {
     order: 2;
 }
 
+/* Estilos del contenido principal (content) */
 .content {
     width: 65%;
     padding: 20px;
@@ -102,9 +103,72 @@ aside {
     }
 }
 
+/* Estilos del pie de página */
 footer {
     color: #463d3d;
     padding: 10px 20px;
     text-align: center;
 }
 
+/* Estilos del botón de menú desplegable */
+#menu-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#menu-btn:hover {
+    background-color: #ff0000da; /* Cambio de color al pasar el ratón */
+}
+
+/* Estilos del menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilos para la lista de recetas en el menú desplegable */
+.dropdown-content {
+    list-style: none;
+    padding: 0;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    min-width: 160px;
+    border-radius: 5px; /* Borde redondeado */
+}
+
+/* Estilos para los elementos de la lista de recetas en el menú desplegable */
+.dropdown-content li {
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content li:hover {
+    background-color: #ec71719c;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos para los enlaces en el menú desplegable */
+.dropdown-content li a {
+    color: #333; /* Cambia el color del texto a tu preferencia, por ejemplo, #333 es un gris oscuro */
+    text-decoration: none; /* Elimina la subrayado por defecto de los enlaces */
+}
+
+/* Estilos para los enlaces en el menú desplegable al pasar el ratón */
+.dropdown-content li a:hover {
+    color: rgb(255, 4, 4); /* Cambia el color al pasar el ratón, por ejemplo, #0074D9 es un azul característico */
+}
+
+.imagencoca {
+    width: 300px;
+    border-left: 20%;
+}

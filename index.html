@@ -28,54 +28,45 @@
 
     <div class="main-content">
         <div class="content">
-            <h1>Ingredientes para la masa de la coca</h1>
-                <p> • 500gr. harina
-                <p>   • 100gr. azúcar
-                <p>   • 1 huevo entero
-                <p> • 150gr. mantequilla pomada
-                <p>    • 8gr. sal
-                <p>    • 190 ml. Leche
-                <p>    • Ralladura de 1 limón
-                <p>• 10/20 gr de levadura según tiempo de fermentación
-                
-            <h1>Ingredientes Para la Crema pastelera</h1>
-                <p>• 200ml. Leche
-                <p>• 2 yemas
-                <p>• 40gr. azúcar
-                <p>• 12gr. maicena
-                
-                <p>Acabados
-                <p>• Piñones
-                <p>• Azúcar casson.
-                
-                <h1>Elaboración</h1>
-                <p>Mezclar la leche y la levadura. Añadir la harina, el azúcar, la sal, el huevo y la ralladura de limón.
-                <p>Amasar unos 15 minutos.
-                
-                <p>Añadir la mantequilla hasta incorporarla bien..
-                <p>Dejar el bol tapado con film durante unos 30 minutos. Romper la fermentación.
-                
-                <p>Estirar la masa en un silpat untada con aceite y pintar con huevo. Colocar la crema pastelera en forma de rejilla
-                <p>Añadir piñones encima y dejar fermentar 30 minutos
-                
-                <p>Antes de cocer, espolvorear con azúcar casson.
-                
-                <p>Cocer a 220º hasta que dore.</p>
+            <!-- Sección de presentación -->
+            <h1>Bienvenido a nuestra colección de fichas técnicas y recetas</h1>
+            <p>Encuentra una variedad de fichas técnicas y recetas de panadería, confitería y repostería.</p>
+            <p>¡Aprende y disfruta creando deliciosos productos!</p>
         </div>
         <aside>
-            <h2>Coca de San Juan</h2>
-            <p></p>
-            <img src="imagenes/cocasanjuan.png" width="300px">
+            <h2>Recetas</h2>
+            <div class="dropdown">
+                <button id="menu-btn">Mostrar Recetas</button>
+                <ul id="recetas-list" class="dropdown-content">
+                    <li><a href="Cocadesanjuan.html">Coca de San Juan</a></li>
+                    <li><a href="#">Receta 2</a></li>
+                    <!-- Agrega más elementos de receta aquí -->
+                </ul>
+            </div>
         </aside>
     </div>
+
+  
 
     <footer>
         <div class="logoig">
             <a href="https://www.instagram.com/itsaduuuuuuuuuuu/" target="_blank">
             <img class="image" img src="imagenes/ignegro.png" href="https://www.instagram.com/itsaduuuuuuuuuuu/"  >
-        <!--   <img class="image-hover" img src="imagenes/igcolor.png" href="https://www.instagram.com/itsaduuuuuuuuuuu/"  > </a> -->
+            <!-- <img class="image-hover" img src="imagenes/igcolor.png" href="https://www.instagram.com/itsaduuuuuuuuuuu/"  > </a>  -->
         </div>
     </footer>
 </body>
 
 </html>
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const recetasList = document.getElementById('recetas-list');
+
+   menuBtn.addEventListener('click', () => {
+         if (recetasList.style.display === 'none' || recetasList.style.display === '') {
+             recetasList.style.display = 'block';
+        } else {
+           recetasList.style.display = 'none';
+       }
+    });
+  </script>

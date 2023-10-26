@@ -33,8 +33,15 @@
             <p>Contenido principal de la página.</p>
         </div>
         <aside>
-            <h2>Aside</h2>
-            <p>Contenido del aside.</p>
+            <h2>Recetas</h2>
+            <div class="dropdown">
+                <button id="menu-btn">Mostrar Recetas</button>
+                <ul id="recetas-list" class="dropdown-content">
+                    <li><a href="Cocadesanjuan.html">Coca de San Juan</a></li>
+                    <li><a href="#">Receta 2</a></li>
+                    <!-- Agrega más elementos de receta aquí -->
+                </ul>
+            </div>
         </aside>
     </div>
 
@@ -48,3 +55,15 @@
 </body>
 
 </html>
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const recetasList = document.getElementById('recetas-list');
+
+   menuBtn.addEventListener('click', () => {
+         if (recetasList.style.display === 'none' || recetasList.style.display === '') {
+             recetasList.style.display = 'block';
+        } else {
+           recetasList.style.display = 'none';
+       }
+    });
+  </script>
